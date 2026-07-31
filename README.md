@@ -87,76 +87,6 @@ SGSA/
 
 - PostgreSQL
 
----
-
-## Estrutura Conceitual
-
-```
-Instituição
-│
-├── Prédio
-│   ├── Salas
-│   ├── Laboratórios
-│   └── TMAs
-│
-└── Equipamentos
-    ├── Computadores
-    ├── Monitores
-    ├── Projetores
-    └── Outros
-```
-
----
-
-## Fluxo de uma Ocorrência
-
-1. Usuário registra um chamado.
-2. O sistema identifica o ambiente.
-3. O equipamento é associado automaticamente, quando aplicável.
-4. A ocorrência recebe categoria, prioridade e gravidade.
-5. A equipe realiza o atendimento.
-6. A solução é registrada.
-7. O histórico permanece armazenado.
-
----
-
-## Estados das Ocorrências
-
-- Aberto
-- Em análise
-- Aguardando atendimento
-- Em atendimento
-- Aguardando material
-- Aguardando terceiro
-- Resolvido
-- Reaberto
-- Cancelado
-
----
-
-## Categorias
-
-- Computador
-- Rede
-- Monitor
-- Projetor
-- Vídeo
-- Áudio
-- Software
-- Login
-- Energia
-- Cabo ou Adaptador
-- Mobiliário
-- Infraestrutura
-- Outro
-
----
-
-## Equipe
-
-Projeto desenvolvido para a disciplina de Desenvolvimento Web da Unijorge.
-
----
 
 ## Status do Projeto
 
@@ -164,8 +94,3 @@ Projeto desenvolvido para a disciplina de Desenvolvimento Web da Unijorge.
 
 Atualmente o projeto encontra-se na fase de desenvolvimento da interface e modelagem do sistema.
 
----
-
-## Licença
-
-Este projeto possui fins exclusivamente acadêmicos.
