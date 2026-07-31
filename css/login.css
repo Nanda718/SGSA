@@ -1,0 +1,393 @@
+
+    /* Banner */
+
+
+    .login-banner{
+
+        position: relative;
+        width:45%;
+        overflow:hidden;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        background:
+        radial-gradient(circle at top left,#9fd8ff 0%,transparent 35%),
+        radial-gradient(circle at top,#ff7b7b 0%,transparent 30%),
+        radial-gradient(circle at bottom left,#4a7cff 0%,transparent 45%),
+        linear-gradient(135deg,#d72638,#4a63ff);
+
+    }
+
+    .unijorge{
+
+        position:absolute;
+        top:35px;
+        left:35px;
+        display:flex;
+        align-items:center;
+        gap:15px;
+        z-index:2;
+
+    }
+
+    .unijorge img{
+
+        width:52px;
+
+    }
+
+    .banner-content{
+
+        text-align:center;
+        color:white;
+        z-index:2;
+
+    }
+
+    .sgsa-icon{
+        font-size:5rem;
+    }
+
+    .banner-content h1{
+
+        font-size: 100px;
+        font-weight:800;
+        letter-spacing:2px;
+
+    }
+
+    .banner-content p{
+        margin-top:5px;
+        font-size:20px;
+        opacity:.95;
+
+    }
+
+    .line{
+
+        width:200px;
+        height:2px;
+        margin:10px auto;
+        background:linear-gradient(90deg,
+        #e30808,
+        rgb(47, 53, 244),
+        #518df3);
+
+    }
+
+    .circle{
+
+        position:absolute;
+        border-radius:50%;
+        filter:blur(10px);
+        opacity:.18;
+
+    }
+
+    .circle1{
+
+        width:380px;
+        height:380px;
+        background:#ffffff;
+        top:-140px;
+        right:-130px;
+
+    }
+
+    .circle2{
+
+        width:420px;
+        height:420px;
+        background:#001f8f;
+        bottom:-180px;
+        left:-170px;
+
+    }
+
+
+    /* Formulário */
+
+
+    .login-formulario{
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 70px;
+    }
+
+    .formulario-header h2{
+        font-size: 50px;
+        color: #222;
+    }
+
+    .formulario-header p{
+        color: #777;
+        margin-bottom: 40px;
+    }
+
+    .input-group{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 22px;
+    }
+
+    .input-group label{
+        margin-bottom: 8px;
+        font-size: .9rem;
+        font-weight: 500;
+        color: #444;
+    }
+
+    .input-group input{
+        height: 52px;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        padding: 0 18px;
+        outline: none;
+        font-size: .95rem;
+        transition: .3s;
+    }
+
+    .input input:focus{
+        border-color: #4f46ff;
+        box-shadow: 0 0 0 4px rgba(79,70,255,.15);
+    }
+
+    .opcoes{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        font-size: .9rem;
+    }
+
+    .opcoes label{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #666;
+    }
+
+    .opcoes a{
+        color: #ea2323;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    button{
+        width: 100%;
+        height: 55px;
+        border: none;
+        border-radius: 12px;
+        background: #4f46ff;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: .3s;
+        box-shadow: 0 10px 20px rgba(79,70,255,.3);
+    }
+
+    button:hover{
+        background: #3d35db;
+        transform: translateY(-2px);
+    }
+
+
+
+
+/*======================
+NOTEBOOK
+======================*/
+@media (max-width:1200px){
+
+.login-container{
+width:95%;
+min-height:600px;
+}
+
+.login-banner{
+width:42%;
+}
+
+.login-formulario{
+width:58%;
+padding:50px;
+}
+
+.banner-content h1{
+font-size:72px;
+}
+
+.banner-content p{
+font-size:18px;
+}
+
+.sgsa-icon{
+font-size:4rem;
+}
+
+.unijorge{
+top:25px;
+left:25px;
+}
+
+.unijorge img{
+width:45px;
+}
+
+.formulario-header h2{
+font-size:42px;
+}
+
+}
+
+/*======================
+TABLET
+======================*/
+@media (max-width:900px){
+
+body{
+padding:20px;
+}
+
+.login-container{
+flex-direction:column;
+width:100%;
+height:auto;
+}
+
+.login-banner,
+.login-formulario{
+width:100%;
+}
+
+.login-banner{
+min-height:340px;
+padding:40px 30px;
+}
+
+.banner-content h1{
+font-size:60px;
+}
+
+.banner-content p{
+font-size:18px;
+}
+
+.sgsa-icon{
+font-size:4rem;
+}
+
+.login-formulario{
+padding:40px;
+}
+
+.formulario-header h2{
+font-size:38px;
+}
+
+.circle1{
+width:280px;
+height:280px;
+top:-120px;
+right:-100px;
+}
+
+.circle2{
+width:300px;
+height:300px;
+bottom:-120px;
+left:-100px;
+}
+
+}
+
+/*======================
+CELULAR
+======================*/
+@media (max-width:600px){
+
+body{
+padding:12px;
+}
+
+.login-container{
+width:100%;
+height:auto;
+border-radius:18px;
+}
+
+.login-banner{
+min-height:240px;
+padding:25px 20px;
+}
+
+.unijorge{
+top:18px;
+left:18px;
+}
+
+.unijorge img{
+width:38px;
+}
+
+.sgsa-icon{
+font-size:2.8rem;
+}
+
+.banner-content h1{
+font-size:42px;
+letter-spacing:1px;
+}
+
+.banner-content p{
+font-size:15px;
+line-height:1.5;
+}
+
+.line{
+width:120px;
+}
+
+.login-formulario{
+padding:30px 20px;
+}
+
+.formulario-header h2{
+font-size:30px;
+}
+
+.formulario-header p{
+font-size:15px;
+margin-bottom:25px;
+}
+
+.input-group{
+margin-bottom:18px;
+}
+
+.input-group input{
+height:48px;
+font-size:15px;
+}
+
+.opcoes{
+flex-direction:row;
+align-items:flex-start;
+gap:12px;
+font-size:12px;
+}
+
+button{
+height:30px;
+width: 60%;
+}
+
+.circle{
+display:none;
+}
+
+}

@@ -1,0 +1,11 @@
+# VS Code
+.vscode/
+
+# Banco de dados local
+*.db
+
+# Node
+node_modules/
+
+# Arquivos temporários
+*.log
