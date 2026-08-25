@@ -15,6 +15,9 @@ body{
     align-items: center;
     padding: 30px;
 }
+body.dark{
+    background: #626064;
+}
 
 .login-container{
     width: 1100px;
