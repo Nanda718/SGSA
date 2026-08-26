@@ -1,0 +1,189 @@
+/* =========================
+   PAINEL DE SALAS
+========================= */
+
+#painel {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill, minmax(250px, 1fr));
+
+    gap: 18px;
+
+    padding: 26px 0;
+}
+
+/* Botão/cartão de cada sala */
+
+.room-card {
+    position: relative;
+
+    padding: 20px;
+
+    border: 1px solid var(--border);
+    border-radius: 17px;
+
+    color: var(--text);
+    background: var(--surface);
+
+    box-shadow:
+        0 4px 18px rgba(25, 35, 58, 0.04);
+
+    font-family: inherit;
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s,
+        border-color 0.2s;
+}
+
+.room-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #c7ccf9;
+
+    box-shadow: var(--shadow);
+}
+
+.room-card:focus-visible {
+    outline: 3px solid rgba(79, 70, 229, 0.25);
+    outline-offset: 3px;
+}
+
+/* Parte superior do cartão */
+
+.room-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.room-icon {
+    width: 42px;
+    height: 42px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 12px;
+
+    color: var(--primary);
+    background: var(--primary-soft);
+}
+
+/* Nome da sala */
+
+.room-card h2 {
+    margin: 18px 0 5px;
+
+    color: var(--text);
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Nível e prédio */
+
+.room-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 12px;
+}
+
+.room-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Status da sala */
+
+.status {
+    padding: 5px 9px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.status.disponivel {
+    color: var(--success);
+    background: var(--success-bg);
+}
+
+.status.ocupada {
+    color: var(--danger);
+    background: var(--danger-bg);
+}
+
+.status.manutencao {
+    color: var(--warning);
+    background: var(--warning-bg);
+}
+
+/* Estados do painel */
+
+.loading,
+.empty,
+.error {
+    grid-column: 1 / -1;
+
+    padding: 60px 20px;
+
+    color: var(--muted);
+
+    text-align: center;
+}
+
+.loading i {
+    margin-right: 7px;
+}
+
+.empty i,
+.error i {
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-size: 30px;
+}
+
+.error {
+    color: var(--danger);
+}
+
+.error small {
+    display: inline-block;
+
+    margin-top: 8px;
+
+    color: var(--muted);
+}
+
+/* Responsividade do painel */
+
+@media (max-width: 680px) {
+    #painel {
+        grid-template-columns: 1fr;
+        gap: 14px;
+
+        padding-top: 18px;
+    }
+
+    .room-card {
+        padding: 18px;
+    }
+}

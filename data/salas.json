@@ -1,0 +1,15 @@
+[
+  { "id": 1, 
+  "nome": "Sala 405", 
+  "nivel": "Nível 4", 
+  "predio": "Prédio 1", 
+  "status": "Disponível" 
+},
+
+{ "id": 1, 
+  "nome": "Sala 401", 
+  "nivel": "Nível 4", 
+  "predio": "Prédio 1", 
+  "status": "Disponível" 
+}
+]

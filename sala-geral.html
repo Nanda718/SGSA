@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="css/sala-geral.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/filtros.css">
+    <link rel="stylesheet" href="css/painel.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
 
@@ -93,13 +96,43 @@
 
                 </ul>
             </div>
-        </div>
+            </div>
         </nav>
+
+        <main class="main-content">
+    <section id="filters" aria-labelledby="titulo-filtros">
+      <div class="filter-heading">
+        <div>
+          <p class="eyebrow">VISÃO GERAL</p>
+          <h1 id="titulo-filtros">Painel de salas</h1>
+        </div>
+        <p id="resultado-contagem" aria-live="polite">Carregando salas...</p>
+      </div>
+
+      <form class="filter-grid" id="filter-form">
+        <label class="search-field">
+          <span>Buscar sala</span>
+          <div class="input-icon"><i class="fa-solid fa-magnifying-glass"></i><input id="filtro-busca" type="search" placeholder="Nome ou número"></div>
+        </label>
+        <label><span>Nível</span><select id="filtro-nivel"><option value="">Todos</option></select></label>
+        <label><span>Prédio</span><select id="filtro-predio"><option value="">Todos</option></select></label>
+        <label><span>Status</span><select id="filtro-status"><option value="">Todos</option></select></label>
+        <button id="limpar-filtros" class="clear-button" type="reset"><i class="fa-solid fa-rotate-left"></i> Limpar</button>
+      </form>
+    </section>
+
+    <section id="painel" aria-label="Lista de salas">
+      <div class="loading"><i class="fa-solid fa-circle-notch fa-spin"></i> Carregando...</div>
+    </section>
+  </main>
+        
     
 
 
     <script src="scripts/scripts.js"></script>
     <script src="scripts/toggle-switch.js"></script>
     <script src="scripts/toggle-sidebar.js"></script>
+    <script src="scripts/painel.js"></script>
+    <script src="scripts/filtros.js"></script>
 </body>
 </html>

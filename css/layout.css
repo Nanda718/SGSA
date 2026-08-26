@@ -1,0 +1,124 @@
+:root {
+    --sidebar-aberta: 250px;
+    --sidebar-fechada: 88px;
+    --espacamento-main: 28px;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Sidebar fixa */
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+
+    width: var(--sidebar-aberta);
+    height: 100vh;
+
+    transition: width 0.3s ease;
+}
+
+
+.main-content {
+    width: auto;
+    min-width: 0;
+    min-height: 100vh;
+
+    margin-left: var(--sidebar-aberta);
+    padding: var(--espacamento-main);
+
+    transition: margin-left 0.3s ease;
+}
+
+
+#sidebar.close,
+#sidebar.closed {
+    width: var(--sidebar-fechada);
+}
+
+#sidebar.close ~ .main-content,
+#sidebar.closed ~ .main-content {
+    margin-left: var(--sidebar-fechada);
+}
+
+
+#filters,
+#painel {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+}
+
+/* Impede que os campos estourem o grid */
+
+.filter-grid > *,
+.room-card {
+    min-width: 0;
+}
+
+.filter-grid input,
+.filter-grid select {
+    max-width: 100%;
+}
+
+/* Tablets */
+
+@media (max-width: 1050px) {
+    :root {
+        --espacamento-main: 20px;
+    }
+}
+
+
+@media (max-width: 680px) {
+    #sidebar {
+        width: min(280px, 85vw);
+
+        transform: translateX(-100%);
+
+        transition:
+            transform 0.3s ease,
+            width 0.3s ease;
+
+        box-shadow: none;
+    }
+
+    #sidebar:not(.close):not(.closed) {
+        transform: translateX(0);
+
+        box-shadow:
+            12px 0 30px rgba(0, 0, 0, 0.18);
+    }
+
+    #sidebar.close,
+    #sidebar.closed {
+        width: min(280px, 85vw);
+        transform: translateX(-100%);
+    }
+
+    .main-content,
+    #sidebar.close ~ .main-content,
+    #sidebar.closed ~ .main-content {
+        width: 100%;
+        margin-left: 0;
+        padding: 16px;
+    }
+}

@@ -8,8 +8,8 @@
        PRINCIPAL
     ============================ */
 
-    --primary: #B85C82;
-    --primary-hover: #A84E73;
+    --primary: #0b012e;
+    --primary-hover: #030236;
     --primary-light: #F8EDF2;
 
     --text-on-primary: #FFFFFF;
@@ -21,13 +21,13 @@
        FUNDOS
     ============================ */
 
-    --background: #FFFEFD;
+    --background: #d9d7e9;
 
-    --surface: #FFFFFF;
+    --surface: #fafcff;
 
-    --surface-secondary: #F7F3F4;
+    --surface-secondary: #d9dfeb;
 
-    --surface-hover: #F1E8EB;
+    --surface-hover: #e8ebf1;
 
 
     /* ============================
@@ -65,14 +65,14 @@
        STATUS — FUNDOS
     ============================ */
 
-    --danger-light: #FFF1F1;
+    --danger-light: #cfc7c7;
 
 
     /* ============================
        SWITCH
     ============================ */
 
-    --switch-background: #D8CDD0;
+    --switch-background: #b3a9ab;
 
     --switch-button: #FFFFFF;
 
@@ -95,14 +95,10 @@ body.dark {
        PRINCIPAL
     ============================ */
 
-    --primary: #D8789E;
-
-    --primary-hover: #E38DAF;
-
-    --primary-light: #3A2831;
-
+    --primary: #0b012e;
+    --primary-hover: #030236;
+    --primary-light: #F8EDF2;
     --text-on-primary: #FFFFFF;
-
     --primary-shadow: rgba(216, 120, 158, 0.20);
 
 
