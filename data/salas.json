@@ -1,12 +1,87 @@
 [
   { "id": 1, 
+  "nome": "Sala 201", 
+  "nivel": "Nível 2", 
+  "predio": "Prédio 1", 
+  "status": "Indisponível" 
+},
+{ "id": 2, 
+  "nome": "Sala 202", 
+  "nivel": "Nível 2", 
+  "predio": "Prédio 1", 
+  "status": "Disponível" 
+},
+{ "id": 3, 
+  "nome": "Sala 203", 
+  "nivel": "Nível 2", 
+  "predio": "Prédio 1", 
+  "status": "Indisponível" 
+},
+{ "id": 4, 
+  "nome": "Sala 204", 
+  "nivel": "Nível 2", 
+  "predio": "Prédio 1", 
+  "status": "Indisponível" 
+},
+{ "id": 5, 
+  "nome": "Sala 205", 
+  "nivel": "Nível 2", 
+  "predio": "Prédio 1", 
+  "status": "Indisponível" 
+},
+{ "id": 6, 
+  "nome": "Sala 401", 
+  "nivel": "Nível 4", 
+  "predio": "Prédio 1", 
+  "status": "Disponível" 
+},
+{ "id": 7, 
+  "nome": "Sala 207", 
+  "nivel": "Nível 2", 
+  "predio": "Prédio 1", 
+  "status": "Indisponível" 
+},
+{ "id": 8, 
+  "nome": "Sala 210", 
+  "nivel": "Nível 2", 
+  "predio": "Prédio 1", 
+  "status": "Disponível" 
+},
+{ "id": 9, 
+  "nome": "Sala 211", 
+  "nivel": "Nível 2", 
+  "predio": "Prédio 1", 
+  "status": "Disponível" 
+},
+{ "id": 10, 
+  "nome": "Sala 212", 
+  "nivel": "Nível 2", 
+  "predio": "Prédio 1", 
+  "status": "Disponível" 
+},
+{ "id": 11, 
+  "nome": "Sala 215", 
+  "nivel": "Nível 2", 
+  "predio": "Prédio 1", 
+  "status": "Disponível" 
+},
+{ "id": 12, 
+  "nome": "Sala 217", 
+  "nivel": "Nível 2", 
+  "predio": "Prédio 1", 
+  "status": "Disponível" 
+},
+
+
+
+  { "id": 16, 
   "nome": "Sala 405", 
   "nivel": "Nível 4", 
   "predio": "Prédio 1", 
   "status": "Disponível" 
 },
 
-{ "id": 1, 
+{ "id": 17, 
   "nome": "Sala 401", 
   "nivel": "Nível 4", 
   "predio": "Prédio 1", 

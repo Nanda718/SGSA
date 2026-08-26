@@ -95,11 +95,11 @@ body.dark {
        PRINCIPAL
     ============================ */
 
-    --primary: #0b012e;
+    --primary: #181535;
     --primary-hover: #030236;
     --primary-light: #F8EDF2;
     --text-on-primary: #FFFFFF;
-    --primary-shadow: rgba(216, 120, 158, 0.20);
+    --primary-shadow: rgba(59, 49, 53, 0.2);
 
 
     /* ============================
@@ -108,9 +108,9 @@ body.dark {
 
     --background: #181617;
 
-    --surface: #242021;
+    --surface: #2d2c35;
 
-    --surface-secondary: #302A2C;
+    --surface-secondary: #443e40;
 
     --surface-hover: #3A3335;
 

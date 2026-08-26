@@ -43,7 +43,7 @@
 .room-card:hover {
     transform: translateY(-3px);
 
-    border-color: #c7ccf9;
+    border-color: #dfd1d1;
 
     box-shadow: var(--shadow);
 }
@@ -63,17 +63,18 @@
 }
 
 .room-icon {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
 
     display: grid;
     place-items: center;
 
     border-radius: 12px;
 
-    color: var(--primary);
+    color: var(--text-muted);
     background: var(--primary-soft);
 }
+
 
 /* Nome da sala */
 
@@ -124,7 +125,7 @@
     background: var(--success-bg);
 }
 
-.status.ocupada {
+.status.indisponivel {
     color: var(--danger);
     background: var(--danger-bg);
 }
