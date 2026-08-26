@@ -1,9 +1,15 @@
-const body = document.querySelector("body"),
-      sidebar = body.querySelector("#sidebar"),
-      toggle = body.querySelector(".toggle"),
-      modeSwitch = body.querySelector(".toggle-switch"),
-      modeText = body.querySelector(".mode-text");
+const body = document.querySelector("body");
+const modeSwitch = document.querySelector(".toggle-switch");
+const modeText = document.querySelector(".mode-text");
 
-    modeSwitch.addEventListener("click", () =>{
-        body.classList.toggle("dark");
-    });
+modeSwitch.addEventListener("click", () => {
+
+    body.classList.toggle("dark");
+
+    if (body.classList.contains("dark")) {
+        modeText.textContent = "Dark Mode";
+    } else {
+        modeText.textContent = "Light Mode";
+    }
+
+});
