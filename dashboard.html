@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | SGSA</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/colors.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <nav id="sidebar">
+            <header>
+
+            <div class="image-text">
+                <span class="logo">
+                    <img src="img/SGSA-logo.png" alt="logo">
+                </span>
+            </div>
+
+            <div class="text header-text">
+                <span class="bem-vindo">Bem vindo(a)!</span>
+                <span class="user">Admin</span>
+            </div>
+
+            <i class="fa-solid fa-chevron-right toggle"></i>
+
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-regular fa-home"></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="dashboard.html">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span class="text nav-text">Salas</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-clock"></i>
+                            <span class="text nav-text">Histórico</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <ul class="menu-footer-links">
+                    <li class="logout-link">
+                        <a href="#">
+                            <i class="fa-solid fa-power-off"></i>
+                            <span class="text nav-text">Logout</span>
+                        </a>
+                    </li>
+
+                    <li class="mode">
+                            <div class="moon-sun">
+                                <i class="fa-regular fa-moon moon"></i>
+                                <i class="fa-regular fa-sun sun"></i>
+                            </div>
+                            <span class="mode-text text">Dark Mode</span>
+
+                            <div class="toggle-switch">
+                                <span class="switch"></span>
+                            </div>
+                    </li>
+
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+        <!-- =========================
+             CONTEÚDO
+        ========================== -->
+
+        <main class="main-content">
+
+            <!-- HEADER -->
+
+            <header class="topbar">
+
+                <div>
+
+                    <p class="page-eyebrow">
+                        Visão geral
+                    </p>
+
+                    <h1>
+                        Dashboard
+                    </h1>
+
+                    <p class="page-description">
+                        Acompanhe a situação das salas e chamados em tempo real.
+                    </p>
+
+                </div>
+
+
+                <div class="topbar-actions">
+
+                    <div class="filters">
+
+                        <select>
+                            <option>Todos os campus</option>
+                            <option>Campus Paralela</option>
+                            <option>Campus Comércio</option>
+                        </select>
+
+                        <select>
+                            <option>Todos os blocos</option>
+                            <option>Bloco A</option>
+                            <option>Bloco B</option>
+                            <option>Bloco C</option>
+                        </select>
+
+                    </div>
+
+
+                    <button class="notification-button">
+                        ♢
+                        <span class="notification-dot"></span>
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- =========================
+                 CARDS
+            ========================== -->
+
+            <section class="summary-grid">
+
+                <article class="summary-card">
+
+                    <div class="summary-card-header">
+
+                        <div class="card-icon blue">
+                            ▦
+                        </div>
+
+                        <span class="card-label">
+                            Total de salas
+                        </span>
+
+                    </div>
+
+                    <div class="summary-card-content">
+
+                        <strong class="card-number">
+                            48
+                        </strong>
+
+                        <span class="card-change positive">
+                            +2 este mês
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="summary-card">
+
+                    <div class="summary-card-header">
+
+                        <div class="card-icon purple">
+                            ✓
+                        </div>
+
+                        <span class="card-label">
+                            Operacionais
+                        </span>
+
+                    </div>
+
+                    <div class="summary-card-content">
+
+                        <strong class="card-number">
+                            39
+                        </strong>
+
+                        <span class="card-change positive">
+                            81% das salas
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="summary-card">
+
+                    <div class="summary-card-header">
+
+                        <div class="card-icon pink">
+                            !
+                        </div>
+
+                        <span class="card-label">
+                            Em atenção
+                        </span>
+
+                    </div>
+
+                    <div class="summary-card-content">
+
+                        <strong class="card-number">
+                            6
+                        </strong>
+
+                        <span class="card-change warning">
+                            3 novos hoje
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="summary-card">
+
+                    <div class="summary-card-header">
+
+                        <div class="card-icon red">
+                            ×
+                        </div>
+
+                        <span class="card-label">
+                            Críticas
+                        </span>
+
+                    </div>
+
+                    <div class="summary-card-content">
+
+                        <strong class="card-number">
+                            3
+                        </strong>
+
+                        <span class="card-change danger">
+                            Requer atenção
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="summary-card">
+
+                    <div class="summary-card-header">
+
+                        <div class="card-icon navy">
+                            ◌
+                        </div>
+
+                        <span class="card-label">
+                            Chamados abertos
+                        </span>
+
+                    </div>
+
+                    <div class="summary-card-content">
+
+                        <strong class="card-number">
+                            8
+                        </strong>
+
+                        <span class="card-change">
+                            2 prioritários
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- =========================
+                 GRÁFICOS
+            ========================== -->
+
+            <section class="charts-grid">
+
+                <!-- SAÚDE DAS SALAS -->
+
+                <article class="dashboard-card chart-large">
+
+                    <div class="section-header">
+
+                        <div>
+                            <h2>Saúde das salas</h2>
+
+                            <p>
+                                Situação atual das salas cadastradas
+                            </p>
+                        </div>
+
+                        <select class="small-select">
+                            <option>Hoje</option>
+                            <option>Últimos 7 dias</option>
+                            <option>Últimos 30 dias</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="health-content">
+
+                        <div class="donut-wrapper">
+
+                            <canvas id="healthChart"></canvas>
+
+                            <div class="donut-center">
+                                <strong>81%</strong>
+                                <span>operacionais</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="chart-legend">
+
+                            <div class="legend-item">
+
+                                <span class="legend-color operational"></span>
+
+                                <div>
+                                    <strong>39</strong>
+                                    <span>Operacionais</span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="legend-item">
+
+                                <span class="legend-color attention"></span>
+
+                                <div>
+                                    <strong>6</strong>
+                                    <span>Em atenção</span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="legend-item">
+
+                                <span class="legend-color critical"></span>
+
+                                <div>
+                                    <strong>3</strong>
+                                    <span>Críticas</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CHAMADOS POR CATEGORIA -->
+
+                <article class="dashboard-card chart-small">
+
+                    <div class="section-header">
+
+                        <div>
+                            <h2>Chamados por categoria</h2>
+
+                            <p>
+                                Últimos 30 dias
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="chart-container">
+                        <canvas id="categoryChart"></canvas>
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- =========================
+                 SEGUNDO GRÁFICO
+            ========================== -->
+
+            <section class="dashboard-card tickets-chart-card">
+
+                <div class="section-header">
+
+                    <div>
+                        <h2>Volume de chamados</h2>
+
+                        <p>
+                            Chamados registrados nos últimos 7 dias
+                        </p>
+                    </div>
+
+                    <div class="chart-indicator">
+                        <span></span>
+                        Chamados
+                    </div>
+
+                </div>
+
+
+                <div class="chart-container line-container">
+                    <canvas id="ticketsChart"></canvas>
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 PARTE INFERIOR
+            ========================== -->
+
+            <section class="bottom-grid">
+
+
+                <!-- CHAMADOS -->
+
+                <article class="dashboard-card priority-tickets">
+
+                    <div class="section-header">
+
+                        <div>
+                            <h2>Chamados prioritários</h2>
+
+                            <p>
+                                Ocorrências que precisam de atenção
+                            </p>
+                        </div>
+
+                        <a href="#" class="view-all">
+                            Ver todos →
+                        </a>
+
+                    </div>
+
+
+                    <div class="ticket-list">
+
+                        <div class="ticket">
+
+                            <div class="ticket-priority critical"></div>
+
+                            <div class="ticket-main">
+
+                                <div class="ticket-title">
+
+                                    <strong>
+                                        Sala 203
+                                    </strong>
+
+                                    <span class="status critical">
+                                        Crítico
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    Projetor não está ligando
+                                </p>
+
+                                <span class="ticket-time">
+                                    Aberto há 18 min
+                                </span>
+
+                            </div>
+
+                            <button class="ticket-button">
+                                →
+                            </button>
+
+                        </div>
+
+
+                        <div class="ticket">
+
+                            <div class="ticket-priority high"></div>
+
+                            <div class="ticket-main">
+
+                                <div class="ticket-title">
+
+                                    <strong>
+                                        Laboratório 02
+                                    </strong>
+
+                                    <span class="status high">
+                                        Alta
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    Falha de conexão em múltiplos computadores
+                                </p>
+
+                                <span class="ticket-time">
+                                    Aberto há 34 min
+                                </span>
+
+                            </div>
+
+                            <button class="ticket-button">
+                                →
+                            </button>
+
+                        </div>
+
+
+                        <div class="ticket">
+
+                            <div class="ticket-priority medium"></div>
+
+                            <div class="ticket-main">
+
+                                <div class="ticket-title">
+
+                                    <strong>
+                                        Sala 105
+                                    </strong>
+
+                                    <span class="status medium">
+                                        Média
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    Computador do professor sem áudio
+                                </p>
+
+                                <span class="ticket-time">
+                                    Aberto há 52 min
+                                </span>
+
+                            </div>
+
+                            <button class="ticket-button">
+                                →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SALAS -->
+
+                <article class="dashboard-card room-status">
+
+                    <div class="section-header">
+
+                        <div>
+                            <h2>Salas em atenção</h2>
+
+                            <p>
+                                Ambientes com ocorrências abertas
+                            </p>
+                        </div>
+
+                        <a href="#" class="view-all">
+                            Ver salas →
+                        </a>
+
+                    </div>
+
+
+                    <div class="rooms-list">
+
+                        <div class="room-item">
+
+                            <div class="room-icon">
+                                203
+                            </div>
+
+                            <div class="room-info">
+
+                                <strong>
+                                    Sala 203
+                                </strong>
+
+                                <span>
+                                    Bloco B · 2º andar
+                                </span>
+
+                            </div>
+
+                            <span class="room-status-indicator critical">
+                                Crítico
+                            </span>
+
+                        </div>
+
+
+                        <div class="room-item">
+
+                            <div class="room-icon">
+                                L2
+                            </div>
+
+                            <div class="room-info">
+
+                                <strong>
+                                    Laboratório 02
+                                </strong>
+
+                                <span>
+                                    Bloco A · 1º andar
+                                </span>
+
+                            </div>
+
+                            <span class="room-status-indicator attention">
+                                Atenção
+                            </span>
+
+                        </div>
+
+
+                        <div class="room-item">
+
+                            <div class="room-icon">
+                                105
+                            </div>
+
+                            <div class="room-info">
+
+                                <strong>
+                                    Sala 105
+                                </strong>
+
+                                <span>
+                                    Bloco C · 1º andar
+                                </span>
+
+                            </div>
+
+                            <span class="room-status-indicator attention">
+                                Atenção
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- =========================
+                 ATIVIDADES
+            ========================== -->
+
+            <section class="dashboard-card activity-card">
+
+                <div class="section-header">
+
+                    <div>
+                        <h2>Atividade recente</h2>
+
+                        <p>
+                            Últimas alterações realizadas no sistema
+                        </p>
+                    </div>
+
+                    <a href="#" class="view-all">
+                        Ver histórico →
+                    </a>
+
+                </div>
+
+
+                <div class="activity-list">
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon success">
+                            ✓
+                        </div>
+
+                        <div>
+                            <p>
+                                Chamado <strong>#024</strong> da
+                                <strong>Sala 108</strong> foi resolvido.
+                            </p>
+
+                            <span>
+                                há 12 minutos
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon blue">
+                            ✓
+                        </div>
+
+                        <div>
+                            <p>
+                                Checklist da <strong>Sala 304</strong>
+                                foi concluído.
+                            </p>
+
+                            <span>
+                                há 27 minutos
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon danger">
+                            !
+                        </div>
+
+                        <div>
+                            <p>
+                                Novo chamado crítico aberto na
+                                <strong>Sala 203</strong>.
+                            </p>
+
+                            <span>
+                                há 35 minutos
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon purple">
+                            +
+                        </div>
+
+                        <div>
+                            <p>
+                                Novo equipamento adicionado ao
+                                <strong>Laboratório 04</strong>.
+                            </p>
+
+                            <span>
+                                há 1 hora
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- CHART.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/toggle-switch.js"></script>
+    <script src="scripts/toggle-sidebar.js"></script>
+    <script src="scripts/"></script>
+
+</body>
+
+</html>

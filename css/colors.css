@@ -5,67 +5,72 @@
 :root {
 
     /* ============================
-       PRINCIPAL
+       IDENTIDADE
     ============================ */
 
     --primary: #0b012e;
-    --primary-hover: #030236;
-    --primary-light: #F8EDF2;
+    --primary-hover: #17104a;
+    --primary-light: #eeeafd;
 
-    --text-on-primary: #FFFFFF;
+    --blue: #3157d5;
+    --blue-light: #edf1ff;
 
-    --primary-shadow: rgba(184, 92, 130, 0.20);
+    --purple: #7956d8;
+    --purple-light: #f0ebff;
+
+    --pink: #d4509c;
+    --pink-light: #fdebf5;
+
+    --text-on-primary: #ffffff;
+
+    --primary-shadow: rgba(11, 1, 46, 0.18);
 
 
     /* ============================
        FUNDOS
     ============================ */
 
-    --background: #d9d7e9;
+    --background: #f2f3f8;
 
-    --surface: #fafcff;
-
-    --surface-secondary: #d9dfeb;
-
-    --surface-hover: #e8ebf1;
+    --surface: #ffffff;
+    --surface-secondary: #f7f8fc;
+    --surface-hover: #edeff5;
 
 
     /* ============================
        TEXTOS
     ============================ */
 
-    --text-primary: #333333;
-
-    --text-secondary: #777777;
-
-    --text-muted: #999999;
+    --text-primary: #252535;
+    --text-secondary: #6f7282;
+    --text-muted: #9a9dab;
 
 
     /* ============================
        BORDAS
     ============================ */
 
-    --border: #EEE5E8;
+    --border: #e5e6ee;
 
 
     /* ============================
        STATUS
     ============================ */
 
-    --success: #4CAF7D;
-
-    --warning: #E5A93D;
-
-    --danger: #D95353;
-
-    --info: #5B8DEF;
+    --success: #4caf7d;
+    --warning: #e5a93d;
+    --danger: #d95353;
+    --info: #5b8def;
 
 
     /* ============================
        STATUS — FUNDOS
     ============================ */
 
-    --danger-light: #cfc7c7;
+    --success-light: #e8f6ef;
+    --warning-light: #fff4df;
+    --danger-light: #fbeaea;
+    --info-light: #eaf1ff;
 
 
     /* ============================
@@ -73,15 +78,27 @@
     ============================ */
 
     --switch-background: #b3a9ab;
+    --switch-button: #ffffff;
 
-    --switch-button: #FFFFFF;
+
+    /* ============================
+       LAYOUT
+    ============================ */
+
+    --sidebar-width: 250px;
+    --sidebar-collapsed: 82px;
+
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 20px;
 
 
     /* ============================
        SOMBRAS
     ============================ */
 
-    --shadow: rgba(0, 0, 0, 0.08);
+    --shadow: 0 8px 30px rgba(11, 1, 46, 0.06);
+
 }
 
 
@@ -92,79 +109,86 @@
 body.dark {
 
     /* ============================
-       PRINCIPAL
+       IDENTIDADE
     ============================ */
 
     --primary: #181535;
-    --primary-hover: #030236;
-    --primary-light: #F8EDF2;
-    --text-on-primary: #FFFFFF;
-    --primary-shadow: rgba(59, 49, 53, 0.2);
+    --primary-hover: #221d4d;
+    --primary-light: rgba(121, 86, 216, 0.15);
+
+    --blue: #6887ef;
+    --blue-light: rgba(49, 87, 213, 0.16);
+
+    --purple: #9a7bea;
+    --purple-light: rgba(121, 86, 216, 0.16);
+
+    --pink: #e270b4;
+    --pink-light: rgba(212, 80, 156, 0.16);
+
+    --text-on-primary: #ffffff;
+
+    --primary-shadow: rgba(0, 0, 0, 0.25);
 
 
     /* ============================
        FUNDOS
     ============================ */
 
-    --background: #181617;
+    --background: #11101a;
 
-    --surface: #2d2c35;
-
-    --surface-secondary: #443e40;
-
-    --surface-hover: #3A3335;
+    --surface: #1b1a27;
+    --surface-secondary: #242330;
+    --surface-hover: #2c2a39;
 
 
     /* ============================
        TEXTOS
     ============================ */
 
-    --text-primary: #F5F1F2;
-
-    --text-secondary: #C2B9BC;
-
-    --text-muted: #91878A;
+    --text-primary: #f5f3fa;
+    --text-secondary: #bbb8c8;
+    --text-muted: #888494;
 
 
     /* ============================
        BORDAS
     ============================ */
 
-    --border: #3A3436;
+    --border: #302e3c;
 
 
     /* ============================
        STATUS
     ============================ */
 
-    --success: #65C995;
-
-    --warning: #F0BD5A;
-
-    --danger: #E87575;
-
-    --info: #79A3F5;
+    --success: #65c995;
+    --warning: #f0bd5a;
+    --danger: #e87575;
+    --info: #79a3f5;
 
 
     /* ============================
        STATUS — FUNDOS
     ============================ */
 
-    --danger-light: #3A2929;
+    --success-light: rgba(101, 201, 149, 0.13);
+    --warning-light: rgba(240, 189, 90, 0.13);
+    --danger-light: rgba(232, 117, 117, 0.13);
+    --info-light: rgba(121, 163, 245, 0.13);
 
 
     /* ============================
        SWITCH
     ============================ */
 
-    --switch-background: #51494C;
-
-    --switch-button: #FFFFFF;
+    --switch-background: #51494c;
+    --switch-button: #ffffff;
 
 
     /* ============================
        SOMBRAS
     ============================ */
 
-    --shadow: rgba(0, 0, 0, 0.35);
+    --shadow: 0 8px 30px rgba(0, 0, 0, 0.22);
+
 }

@@ -7,13 +7,13 @@ sidebarToggle.addEventListener("click", () => {
 
     if (sidebar.classList.contains("close")) {
 
-        sidebarToggle.classList.remove("fa-chevron-right");
-        sidebarToggle.classList.add("fa-chevron-left");
+        sidebarToggle.classList.remove("fa-chevron-left");
+        sidebarToggle.classList.add("fa-chevron-right");
 
     } else {
 
-        sidebarToggle.classList.remove("fa-chevron-left");
-        sidebarToggle.classList.add("fa-chevron-right");
+        sidebarToggle.classList.remove("fa-chevron-right");
+        sidebarToggle.classList.add("fa-chevron-left");
 
     }
 
